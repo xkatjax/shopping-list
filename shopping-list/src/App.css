@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", Arial, sans-serif;
+}
+
+body {
+  background: url(../img/pexels-martin-péchy-304664.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.shoppingList-input::placeholder {
+  color: #e2e2e2;
+  font-family: "Lato", Arial, sans-serif;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.shoppingList-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 117, 136, 1) 0%,
+    rgba(10, 125, 150, 1) 100%
+  );
+  padding: 16px;
+  border-radius: 5px;
+  width: 376px;
+}
+
+.shoppingList-row:nth-child(3n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(40, 171, 193, 1) 0%,
+    rgba(50, 180, 200, 1) 100%
+  );
+}
+
+.shoppingList-row:nth-child(3n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(158, 223, 237, 1) 0%,
+    rgba(170, 240, 250, 1) 100%
+  );
+}
+
+.line-through-on {
+  text-decoration: line-through;
+}
+.line-through-off {
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-checkbox {
+  color: #fff;
+}
